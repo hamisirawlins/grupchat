@@ -2,13 +2,13 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:grupchat/common/widgets/navbar.dart';
 import 'package:grupchat/features/auth/screens/screens.forgot_password/forgot_password_screen.dart';
-import 'package:grupchat/features/auth/screens/screens.onboarding/verify_email.dart';
 import '../../../../data/services/auth_service.dart';
 import '../../../../utils/constants/sys_util.dart';
 import '../widgets/auth_action_button.dart';
 import '../widgets/auth_input_field.dart';
-import '../../../../common/widgets/general/show_snackbar.dart';
+import '../../../../common/widgets/show_snackbar.dart';
 
 class LoginScreen extends StatefulWidget {
   final Function()? toggleScreen;
@@ -32,7 +32,7 @@ class _LoginScreenState extends State<LoginScreen> {
     //         ),
     //       );
     //     });
-    Get.to(() => const VerifyEmailScreen());
+    Get.to(() => BottomNavMenu());
     // try {
     //   await FirebaseAuth.instance.signInWithEmailAndPassword(
     //       email: emailController.text.trim(),

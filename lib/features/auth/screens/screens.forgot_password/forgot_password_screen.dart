@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:grupchat/common/widgets/general/show_snackbar.dart';
+import 'package:grupchat/common/widgets/show_snackbar.dart';
 import 'package:grupchat/features/auth/screens/screens.onboarding/auth_screen.dart';
 import 'package:grupchat/features/auth/screens/widgets/auth_action_button.dart';
 import 'package:grupchat/features/auth/screens/widgets/auth_input_field.dart';

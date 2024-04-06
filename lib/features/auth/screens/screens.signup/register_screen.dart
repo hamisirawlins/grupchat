@@ -7,7 +7,7 @@ import 'package:grupchat/features/auth/screens/widgets/terms_and_conditions_chec
 import '../../../../utils/constants/sys_util.dart';
 import '../widgets/auth_action_button.dart';
 import '../widgets/auth_input_field.dart';
-import '../../../../common/widgets/general/show_snackbar.dart';
+import '../../../../common/widgets/show_snackbar.dart';
 
 class RegisterScreen extends StatefulWidget {
   final Function()? toggleScreen;
