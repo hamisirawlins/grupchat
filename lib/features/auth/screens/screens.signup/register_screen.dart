@@ -79,7 +79,7 @@ class _LoginScreenState extends State<RegisterScreen> {
                 height: SizeConfig.screenHeight * 0.04,
               ),
               Text(
-                "GAWA",
+                "Grup Chat",
                 style: GoogleFonts.raleway(
                     color: Colors.black45,
                     fontSize: 46,

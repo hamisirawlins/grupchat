@@ -40,7 +40,7 @@ class BottomNavMenu extends StatelessWidget {
 class NavigationController extends GetxController {
   final RxInt selectedIndex = 0.obs;
   final screens = [
-    const HomeScreen(),
+    HomeScreen(),
     // StatsScreen(),
     // TransactionsScreen(),
     // ProfileScreen(),
