@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:grupchat/utils/constants/sys_util.dart';
 
 class PoolCard extends StatelessWidget {
   final String text;
@@ -41,7 +40,7 @@ class PoolCard extends StatelessWidget {
             child: Align(
               alignment: Alignment.bottomCenter,
               child: Container(
-                padding: EdgeInsets.all(8),
+                padding: const EdgeInsets.all(8),
                 decoration: BoxDecoration(
                   color: Colors.black.withOpacity(0.4),
                   borderRadius: const BorderRadius.only(
@@ -52,19 +51,14 @@ class PoolCard extends StatelessWidget {
                 child: Row(
                   children: [
                     Text(
-                      text.replaceRange(12, text.length, '...'),
+                      text.replaceRange(11, text.length, '...'),
                       style: const TextStyle(
                         color: Colors.white,
                         fontSize: 16,
                       ),
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
-                    ),
-                    const Spacer(),
-                    GestureDetector(
-                        onTap: () {},
-                        child:
-                            const Icon(Icons.more_vert, color: Colors.white)),
+                    )
                   ],
                 ),
               ),

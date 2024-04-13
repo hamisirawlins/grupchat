@@ -12,7 +12,7 @@ class Searchbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: SizeConfig.screenWidth * 0.88,
+      width: SizeConfig.screenWidth * 0.84,
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(20),

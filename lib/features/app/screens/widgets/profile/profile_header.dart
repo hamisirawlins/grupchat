@@ -1,20 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:grupchat/features/home/screens/widgets/search_bar.dart';
-import 'package:grupchat/features/home/screens/widgets/total_pooled.dart';
 import 'package:grupchat/utils/constants/sys_util.dart';
 
-class HomeHeader extends StatelessWidget {
-  const HomeHeader({
+class ProfileHeader extends StatelessWidget {
+  const ProfileHeader({
     super.key,
-    required TextEditingController searchController,
-  }) : _searchController = searchController;
-
-  final TextEditingController _searchController;
+  });
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: SizeConfig.screenHeight * 0.32,
+      height: SizeConfig.screenHeight * 0.2,
       width: double.infinity,
       decoration: BoxDecoration(
         gradient: LinearGradient(
@@ -31,20 +26,26 @@ class HomeHeader extends StatelessWidget {
         ),
       ),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Searchbar(searchController: _searchController),
-          SizedBox(height: SizeConfig.screenHeight * 0.024),
-          const TotalPooled(),
-          SizedBox(height: SizeConfig.screenHeight * 0.024),
+          SizedBox(
+            height: SizeConfig.screenHeight * 0.08,
+          ),
           const Text(
-            "Powering Plans Beyond The Group Chat",
+            'Account Settings',
             style: TextStyle(
               color: Colors.white,
-              fontSize: 16,
-              fontWeight: FontWeight.w400,
+              fontSize: 24,
+              fontWeight: FontWeight.bold,
             ),
           ),
+          SizedBox(
+            height: SizeConfig.screenHeight * 0.02,
+          ),
+          Text('userprofile@provider.com',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 14,
+              ))
         ],
       ),
     );
